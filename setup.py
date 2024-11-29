@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name="git-italy",
     version="1.0.0",
-    description="Git if it was made in italy.",
+    description="Git if it was made in italy",
     author="Simone Parvizi",
     author_email="simone.parvizi@outlook.it",
     scripts=["git-italy"],
