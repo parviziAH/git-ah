@@ -1,0 +1,43 @@
+#!/usr/bin/env python3
+
+import subprocess
+import sys
+
+# Albert Heijn ASCII-art (optional)
+AH_ASCII = """
+       🍎
+     🛒 AH 🛒
+       🥖
+"""
+
+COMMANDS = {
+    "ah-happie": "push",
+    "ah-klantenservice": "--help",
+    "ah-to-go": "checkout",
+    "ah-b-corp": "branch",
+    "ah-hamsteren": "pull",
+    "ah-bonus-box": "log",
+    "ah-zaandam": "status",
+    "ah-terra": "checkout",
+}
+
+def main():
+    args = sys.argv[1:]
+    if not args:
+        print(f"{AH_ASCII}\nGebruik: git-ah <commando> [opties]")
+        return
+
+    command = args[0]
+    translated_command = COMMANDS.get(command, command)
+
+    if translated_command == "--help":
+        print(f"{AH_ASCII}\nGebruik deze commando's:")
+        for ah_command, git_command in COMMANDS.items():
+            print(f"  git {ah_command} -> git {git_command}")
+        return
+
+    # Execute the Git command with the translated arguments
+    subprocess.run(["git", translated_command] + args[1:])
+
+if __name__ == "__main__":
+    main()
