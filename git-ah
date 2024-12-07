@@ -29,15 +29,16 @@ AH_ASCII = """
 ++++++++++++++++++++++++++++++==++++++++++
 """
 
+# Command mappings
 COMMANDS = {
-    "ah-happie": "push",
-    "ah-klantenservice": "--help",
-    "ah-to-go": "checkout",
-    "ah-b-corp": "branch",
-    "ah-hamsteren": "pull",
-    "ah-bonus-box": "log",
-    "ah-zaandam": "status",
-    "ah-terra": "checkout",
+    "happie": "push",
+    "klantenservice": "--help",
+    "to-go": "checkout",
+    "b-corp": "branch",
+    "hamsteren": "pull",
+    "bonus-box": "log",
+    "zaandam": "status",
+    "terra": "checkout",
 }
 
 def main():
@@ -46,13 +47,19 @@ def main():
         print(f"{AH_ASCII}\nGebruik: git-ah <commando> [opties]")
         return
 
+    # Extract the subcommand and map it
     command = args[0]
-    translated_command = COMMANDS.get(command, command)
+    translated_command = COMMANDS.get(command)
 
+    if not translated_command:
+        print(f"Error: '{command}' is geen geldig commando.\nGebruik 'git-ah klantenservice' voor hulp.")
+        return
+
+    # Help message
     if translated_command == "--help":
         print(f"{AH_ASCII}\nGebruik deze commando's:")
         for ah_command, git_command in COMMANDS.items():
-            print(f"  git {ah_command} -> git {git_command}")
+            print(f"  git-ah {ah_command} -> git {git_command}")
         return
 
     # Execute the Git command with the translated arguments
