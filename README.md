@@ -1,8 +1,5 @@
 # 🛒 **git-ah** 🍎
 
-**git-ah** transforms standard Git commands into Albert Heijn-themed ones with a touch of Dutch humor! 🧀🍏
-
----
 
 ## 📋 **How It Works**
 
@@ -31,3 +28,22 @@ Every command works just like the original Git command but with a Dutch supermar
    ```bash
    git clone https://github.com/your-username/git-ah.git
    cd git-ah
+   
+2. **Make the Script Executable:** 
+   ```bash
+   chmod +x git-ah
+   ```
+
+3. **Add the Script to Your PATH:**
+    ```bash
+    export PATH=$PATH:$(pwd)
+    ```
+
+4. **Run git-italy Commands:** Now you can use git-italy globally from your terminal. For example:
+    ```bash
+    git-ah zaandam
+    git-ah happie
+    git-ah hamsteren
+    git-ah klantenservice
+    git-ah to-go
+    ```
