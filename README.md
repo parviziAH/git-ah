@@ -16,7 +16,7 @@
 | `git status`          | `git-ah zaandam`     | Check the status of your repo (like AH HQ).      |
 | `git checkout`        | `git-ah terra`       | Switch branches and explore new "terra".         |
 
-Every command works just like the original Git command but with a Dutch supermarket twist!
+Every command works just like the original Git command **maar beter**
 
 ---
 
