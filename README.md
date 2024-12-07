@@ -1,21 +1,25 @@
-# 🍕 **git-italy** 🍝
+# 🛒 **git-ah** 🍎
 
-**git-italy**  transforms standard Git commands into Italian-themed ones 🤌
+**git-ah** transforms standard Git commands into Albert Heijn-themed ones with a touch of Dutch humor! 🧀🍏
 
 ---
 
 ## 📋 **How It Works**
 
-**git-italy** simply replaces the main Git commands with Italian-inspired names. Here’s the mapping:
+**git-ah** replaces the main Git commands with Albert Heijn-inspired names. Here’s the mapping:
 
-| Standard Git Command | git-italy Command      | Description                     |
-|-----------------------|------------------------|---------------------------------|
-| `git push`            | `git-italy pizza`     | Push your changes               |
-| `git pull`            | `git-italy pasta`     | Pull the latest updates         |
-| `git checkout`        | `git-italy carbonara` | Switch branches                 |
-| `git --help`          | `git-italy mamma-mia` | Show help with Italian flair    |
+| Standard Git Command | git-ah Command        | Description                                       |
+|-----------------------|-----------------------|---------------------------------------------------|
+| `git push`            | `git-ah appie`       | Push your changes (make everyone "happie").      |
+| `git pull`            | `git-ah hamsteren`   | Pull the latest updates ("hamsteren").           |
+| `git checkout`        | `git-ah to-go`       | Switch branches, quick like "To-Go".             |
+| `git branch`          | `git-ah b-corp`      | Manage branches ("b-corp" for AH Corporate).     |
+| `git --help`          | `git-ah klantenservice` | Ask for help ("klantenservice").                |
+| `git log`             | `git-ah bonus-box`   | View the log of commits ("bonus box" history).   |
+| `git status`          | `git-ah zaandam`     | Check the status of your repo (like AH HQ).      |
+| `git checkout`        | `git-ah terra`       | Switch branches and explore new "terra".         |
 
-Every command works just like the original Git command but with an Italian twist!
+Every command works just like the original Git command but with a Dutch supermarket twist!
 
 ---
 
@@ -25,24 +29,5 @@ Every command works just like the original Git command but with an Italian twist
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/git-italy.git
-   cd git-italy
-   ```
-   
-2. **Make the Script Executable:** 
-   ```bash
-   chmod +x git-italy.bash
-   ```
-
-3. **Add the Script to Your PATH:**
-    ```bash
-    export PATH=$PATH:$(pwd)
-    ```
-
-4. **Run git-italy Commands:** Now you can use git-italy globally from your terminal. For example:
-    ```bash
-    git-italy pizza
-    git-italy pasta
-    git-italy carbonara
-    git-italy mamma-mia
-    ```
+   git clone https://github.com/your-username/git-ah.git
+   cd git-ah

@@ -31,7 +31,7 @@ AH_ASCII = """
 
 # Command mappings
 COMMANDS = {
-    "happie": "push",
+    "appie": "push",
     "klantenservice": "--help",
     "to-go": "checkout",
     "b-corp": "branch",
